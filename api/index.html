@@ -127,12 +127,7 @@
 
 <div class="content api with-sidebar">
     <div id="ad">
-  <span>Proudly sponsored by</span>
-  <br>
-  <a href="https://strikingly.com/s/careers?utm_source=v" target="_blank"
-    style="display:inline-block;padding-top:8px">
-    <img src="/images/strikingly.png">
-  </a>
+  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script>
 </div>
 
     <h1></h1>
@@ -301,7 +296,7 @@
 <p>Register or retrieve a global component.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// register an extended constructor</span></div><div class="line">Vue.component(<span class="string">'my-component'</span>, Vue.extend(&#123; <span class="comment">/* ... */</span> &#125;))</div><div class="line"></div><div class="line"><span class="comment">// register an options object (automatically call Vue.extend)</span></div><div class="line">Vue.component(<span class="string">'my-component'</span>, &#123; <span class="comment">/* ... */</span> &#125;)</div><div class="line"></div><div class="line"><span class="comment">// retrieve a registered component (always return constructor)</span></div><div class="line"><span class="keyword">var</span> MyComponent = Vue.component(<span class="string">'my-component'</span>)</div></pre></td></tr></table></figure>
 </li>
-<li><p><strong>See also:</strong> <a href="/guide/components.html">Components</a>.</p>
+<li><p><strong>See also:</strong> <a href="/guide/components.html">Components</a></p>
 </li>
 </ul>
 <h3 id="Vue-use">Vue.use( plugin )</h3>
@@ -315,7 +310,7 @@
 <li><p><strong>Usage:</strong></p>
 <p>Install a Vue.js plugin. If the plugin is an Object, it must expose an <code>install</code> method. If it is a function itself, it will be treated as the install method. The install method will be called with Vue as the argument.</p>
 </li>
-<li><p><strong>See also:</strong> <a href="/guide/plugins.html">Plugins</a>.</p>
+<li><p><strong>See also:</strong> <a href="/guide/plugins.html">Plugins</a></p>
 </li>
 </ul>
 <h3 id="Vue-mixin">Vue.mixin( mixin )</h3>
@@ -344,7 +339,7 @@
 <p>Compiles a template string into a render function. Only available in the standalone build.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> res = Vue.compile(<span class="string">'&lt;div&gt;&lt;span&gt;&#123;&#123; msg &#125;&#125;&lt;/span&gt;&lt;/div&gt;'</span>)</div><div class="line"></div><div class="line"><span class="keyword">new</span> Vue(&#123;</div><div class="line">  data: &#123;</div><div class="line">    msg: <span class="string">'hello'</span></div><div class="line">  &#125;,</div><div class="line">  render: res.render,</div><div class="line">  staticRenderFns: res.staticRenderFns</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
-<li><p><strong>See also:</strong> <a href="/guide/render-function.html">Render Functions</a>.</p>
+<li><p><strong>See also:</strong> <a href="/guide/render-function.html">Render Functions</a></p>
 </li>
 </ul>
 <h2 id="Options-Data"><a href="#Options-Data" class="headerlink" title="Options / Data"></a>Options / Data</h2><h3 id="data"><a href="#data" class="headerlink" title="data"></a>data</h3><ul>
@@ -362,7 +357,7 @@
 <li><p><strong>Example:</strong></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> data = &#123; a: <span class="number">1</span> &#125;</div><div class="line"></div><div class="line"><span class="comment">// direct instance creation</span></div><div class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  data: data</div><div class="line">&#125;)</div><div class="line">vm.a <span class="comment">// -&gt; 1</span></div><div class="line">vm.$data === data <span class="comment">// -&gt; true</span></div><div class="line"></div><div class="line"><span class="comment">// must use function when in Vue.extend()</span></div><div class="line"><span class="keyword">var</span> Component = Vue.extend(&#123;</div><div class="line">  data: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> &#123; a: <span class="number">1</span> &#125;</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
-<li><p><strong>See also:</strong> <a href="/guide/reactivity.html">Reactivity in Depth</a>.</p>
+<li><p><strong>See also:</strong> <a href="/guide/reactivity.html">Reactivity in Depth</a></p>
 </li>
 </ul>
 <h3 id="props"><a href="#props" class="headerlink" title="props"></a>props</h3><ul>
@@ -404,7 +399,6 @@
 <li><p><strong>See also:</strong></p>
 <ul>
 <li><a href="/guide/computed.html">Computed Properties</a></li>
-<li><a href="/guide/reactivity.html#Inside-Computed-Properties">Reactivity in Depth: Inside Computed Properties</a></li>
 </ul>
 </li>
 </ul>
@@ -496,7 +490,7 @@
 <li><p><strong>See also:</strong></p>
 <ul>
 <li><a href="/guide/components.html#Child-Component-Reference">Child-Component-Reference</a></li>
-<li>!!TODO: <a href="#ref">ref</a>.</li>
+<li><a href="#ref">ref</a></li>
 </ul>
 </li>
 </ul>
@@ -508,10 +502,7 @@
 <li><p><strong>Details:</strong></p>
 <p>Whether the current Vue instance is running on the server-side.</p>
 </li>
-<li><p><strong>See also:</strong></p>
-<ul>
-<li>!!TODO: <a href="/guide/ssr.html">Server-Side Rendering</a>.</li>
-</ul>
+<li><p><strong>See also:</strong> <a href="/guide/ssr.html">Server-Side Rendering</a></p>
 </li>
 </ul>
 <h2 id="Instance-Methods-Data"><a href="#Instance-Methods-Data" class="headerlink" title="Instance Methods / Data"></a>Instance Methods / Data</h2><h3 id="vm-watch">vm.$watch( expOrFn, callback, [options] )</h3>
@@ -661,7 +652,8 @@
 </li>
 <li><p><strong>See also:</strong></p>
 <ul>
-<li><a href="#Vue-nextTick">Vue.nextTick</a><br>-!!TODO: <a href="/guide/reactivity.html#Async-Update-Queue">Async Update Queue</a></li>
+<li><a href="#Vue-nextTick">Vue.nextTick</a></li>
+<li><a href="/guide/reactivity.html#Async-Update-Queue">Async Update Queue</a></li>
 </ul>
 </li>
 </ul>
@@ -688,7 +680,7 @@
 <li><p><strong>See also:</strong></p>
 <ul>
 <li><a href="/guide/instance.html#Lifecycle-Diagram">Lifecycle Diagram</a></li>
-<li>!!TODO: <a href="/guide/ssr.html">Server-Side Rendering</a></li>
+<li><a href="/guide/ssr.html">Server-Side Rendering</a></li>
 </ul>
 </li>
 </ul>
@@ -696,7 +688,7 @@
 
 <ul>
 <li><p><strong>Usage:</strong></p>
-<p>The Vue instance will be forced into a “digest cycle”, during which all its watchers are re-evaluated.</p>
+<p>The Vue instance will be forced the re-render.</p>
 </li>
 </ul>
 <p class="tip">Note: This method have an influence on your application performance degradation. The excessive call is no recommended.</p>
@@ -727,7 +719,7 @@
 <li><p><strong>Expects:</strong> <code>String</code></p>
 </li>
 <li><p><strong>Details:</strong></p>
-<p>Updates the element’s <code>innerHTML</code>. The contents are inserted as plain HTML - data bindings are ignored. If you need to reuse template pieces, you should use <a href="!!TODO">functional components</a>.</p>
+<p>Updates the element’s <code>innerHTML</code>. The contents are inserted as plain HTML - data bindings are ignored. If you need to reuse template pieces, you should use <a href="/guide/render-function.html#Functional-Components">functional components</a>.</p>
 <p class="tip">Dynamically rendering arbitrary HTML on your website can be very dangerous because it can easily lead to <a href="https://en.wikipedia.org/wiki/Cross-site_scripting" target="_blank" rel="external">XSS attacks</a>. Only use <code>v-html</code> on trusted content and <strong>never</strong> on user-provided content.</p>
 </li>
 <li><p><strong>Example:</strong></p>
